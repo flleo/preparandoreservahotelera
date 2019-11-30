@@ -1,0 +1,348 @@
+.container {
+    background: url("../img/banner.png") no-repeat;
+    background-size: cover;
+    padding: 50px;
+    ;
+}
+
+button {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-style: none;
+    height: 28px;
+    padding: 4px;
+}
+
+svg {
+    width: 20px;
+}
+
+#btn-hotels {
+    background-color: rgb(240, 209, 71);
+    color: black;
+    height: 34px;
+}
+
+#btn-flight {
+    background-color: #125d89;
+    color: white;
+}
+
+#btn-flight svg {
+    fill: white;
+}
+
+#hotels {
+    display: inline-flex;
+    width: 1145px;
+    margin-top: -4px;
+}
+
+
+/* Barra de menus*/
+
+ul {
+    display: inherit;
+    padding: 4px;
+    background-color: rgb(240, 209, 71);
+    height: auto;
+    width: auto;
+    margin: 0px;
+}
+
+
+/* Cada boton de la barra*/
+
+lo {
+    margin: 2px;
+    height: 50px;
+    padding: 10px;
+    display: inline-block;
+    background-color: white;
+}
+
+
+/* 2ª fila de la barra*/
+
+h5,
+#fecha,
+.custom-select,
+#rgbtn-action {
+    border-style: none;
+    font-size: large;
+    background: white;
+}
+
+h6 {
+    color: lightslategray;
+}
+
+h5 {
+    color: rgb(187, 185, 185);
+    margin: 6px 0px;
+}
+
+.btn-orange {
+    color: white;
+    background-color: orange;
+    height: 82px;
+}
+
+
+/*Poppover Noches*************************/
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    display: none;
+    border-style: none;
+    /*hide original SELECT element:*/
+}
+
+
+/* El resultado de la seleccion*/
+
+.select-selected {
+    background-color: #ffffff;
+    margin-top: 4px;
+}
+
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 14px;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+    border-color: rgb(252, 251, 251) transparent transparent transparent;
+}
+
+
+/*point the ARROW upwards when the select box is OPEN (active):*/
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent white transparent;
+    box-shadow: 0px 8px 16px 0px rgba(143, 73, 73, 0.2);
+    background-color: white;
+    top: 7px;
+}
+
+
+/*El dropdown entero*/
+
+.select-items div {
+    border-color: white;
+    padding: 8px 16px;
+    margin-top: 8px;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    ;
+}
+
+
+/*style items (options):*/
+
+.select-items {
+    position: absolute;
+    background-color: #f1f1f1;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: DodgerBlue;
+    color: white;
+    font-weight: bold;
+}
+
+.link-anchor {
+    position: relative;
+    width: 0;
+    font-size: .8em;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.anchor-wrapper {
+    border: none;
+}
+
+section h1[id]:focus,
+section h2[id]:focus,
+section h3[id]:focus,
+section h4[id]:focus,
+section h5[id]:focus {
+    outline: 0;
+}
+
+
+/* Rooms & Guests*******************************/
+
+.rg-btn-action {
+    background-color: white;
+    color: black;
+    padding: 0px;
+    border-style: none;
+}
+
+.rg-dropdown {
+    position: relative;
+    display: inline-block;
+    flex: auto;
+}
+
+.rg-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 260px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.rg-dropdown-content div a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.section1,
+.section2 {
+    max-width: 150px;
+}
+
+.row1 {
+    display: inline;
+    color: #65bd3f;
+    display: flex;
+    align-self: flex-end;
+}
+
+.badge-pill {
+    color: #fff;
+    background: #65bd3f;
+    padding: 0 6px;
+    border-radius: 100%;
+    margin-right: 4px;
+    ;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rg-btnX {
+    border-style: none;
+    margin-left: 130px;
+    background: transparent;
+}
+
+.section2,
+.child1,
+.child2,
+.child3,
+.child4 {
+    visibility: collapse;
+}
+
+.col1,
+.col2,
+.col3,
+.col0 {
+    min-width: 150px;
+    padding: 20px;
+    align-content: space-between;
+}
+
+.rg-edades {
+    min-width: 50px;
+    justify-content: space-between;
+}
+
+.col0 {
+    color: #0793f1;
+    align-content: space-between;
+}
+
+#rg-add {
+    background: skyblue;
+    align-content: space-around;
+    padding: 50px 0px 25px 50px;
+    min-width: 75px;
+}
+
+.badge-blue {
+    color: #fff;
+    background: #0793f1;
+    padding: 18px;
+    border-radius: 100%;
+}
+
+.rg-addroom {
+    margin: 30px 30px 0px -20px;
+}
+
+#rgbtn-done {
+    margin: 10px 0 0 90px;
+    border-style: none;
+    background: transparent;
+    color: #0793f1;
+    font: 100% sans-serif;
+}
+
+.show {
+    display: flex;
+    font: 85% sans-serif;
+}
+
+
+/* Para resetear los valores  del navegador*****************************/
+
+
+/*El objetivo de una hoja de estilo de reinicio es reducir las inconsistencias del navegador en cosas como alturas de línea predeterminadas, márgenes y tamaños de fuente de encabezados, etc. */
+
+html,
+body,
+h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+nav {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
